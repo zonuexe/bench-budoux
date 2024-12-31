@@ -1,0 +1,13 @@
+{
+    "$schema":"./vendor/phpbench/phpbench/phpbench.schema.json",
+    "runner.bootstrap": "vendor/autoload.php",
+    "runner.path": "tests/Bench",
+    "report.generators": {
+        "my": {
+            "extends": "aggregate",
+            "title": "The Consumation of Time",
+            "description": "Benchmark how long it takes to consume time",
+            "break": ["set"]
+        }
+    }
+}
